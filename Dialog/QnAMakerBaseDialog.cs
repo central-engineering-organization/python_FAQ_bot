@@ -20,10 +20,10 @@ namespace Microsoft.BotBuilderSamples.Dialog
     public class QnAMakerBaseDialog : QnAMakerDialog
     {
         // Dialog Options parameters
-        public const string DefaultNoAnswer = "No QnAMaker answers found.";
-        public const string DefaultCardTitle = "Did you mean:";
-        public const string DefaultCardNoMatchText = "None of the above.";
-        public const string DefaultCardNoMatchResponse = "Thanks for the feedback.";
+        public const string DefaultNoAnswer = "답변을 찾지 못했습니다.";
+        public const string DefaultCardTitle = "이것을 의미하나요?";
+        public const string DefaultCardNoMatchText = "위에 것 중에 해당사항이 없습니다.";
+        public const string DefaultCardNoMatchResponse = "피드백을 주셔서 감사합니다.";
 
         private readonly IBotServices _services;
 
@@ -72,5 +72,6 @@ namespace Microsoft.BotBuilderSamples.Dialog
 
             return responseOptions;
         }
+
     }
 }

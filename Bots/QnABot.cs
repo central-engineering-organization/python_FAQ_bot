@@ -43,7 +43,7 @@ namespace Microsoft.BotBuilderSamples.Bots
             {
                 if (member.Id != turnContext.Activity.Recipient.Id)
                 {
-                    await turnContext.SendActivityAsync(MessageFactory.Text($"Hello and welcome!"), cancellationToken);
+                    await turnContext.SendActivityAsync(MessageFactory.Text($"안녕하세요. 파이썬에 관련된 정보를 알려드립니다. 무엇을 도와드릴까요?"), cancellationToken);
                 }
             }
         }
